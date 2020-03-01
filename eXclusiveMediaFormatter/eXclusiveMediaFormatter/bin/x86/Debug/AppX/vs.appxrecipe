@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\projekty\MINE\eXclusiveMediaFormatter\eXclusiveMediaFormatter\eXclusiveMediaFormatter\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-03-01T19:26:59.866</Modified>
+      <Modified>2020-03-01T20:23:58.530</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\projekty\MINE\eXclusiveMediaFormatter\eXclusiveMediaFormatter\eXclusiveMediaFormatter\bin\x86\Debug\eXclusiveMediaFormatter.exe">
       <PackagePath>entrypoint\eXclusiveMediaFormatter.exe</PackagePath>
-      <Modified>2020-03-01T19:26:58.306</Modified>
+      <Modified>2020-03-01T20:23:58.182</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -86,15 +86,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projekty\MINE\eXclusiveMediaFormatter\eXclusiveMediaFormatter\eXclusiveMediaFormatter\bin\x86\Debug\eXclusiveMediaFormatter.xr.xml">
       <PackagePath>eXclusiveMediaFormatter.xr.xml</PackagePath>
-      <Modified>2020-03-01T19:26:58.112</Modified>
+      <Modified>2020-03-01T20:07:03.365</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projekty\MINE\eXclusiveMediaFormatter\eXclusiveMediaFormatter\eXclusiveMediaFormatter\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-03-01T19:26:58.131</Modified>
+      <Modified>2020-03-01T20:23:58.042</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projekty\MINE\eXclusiveMediaFormatter\eXclusiveMediaFormatter\eXclusiveMediaFormatter\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-03-01T19:26:58.131</Modified>
+      <Modified>2020-03-01T20:23:58.042</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -106,7 +106,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projekty\MINE\eXclusiveMediaFormatter\eXclusiveMediaFormatter\eXclusiveMediaFormatter\bin\x86\Debug\Core\eXclusiveMediaFormatter.exe">
       <PackagePath>eXclusiveMediaFormatter.exe</PackagePath>
-      <Modified>2020-03-01T19:26:59.841</Modified>
+      <Modified>2020-03-01T20:23:58.527</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

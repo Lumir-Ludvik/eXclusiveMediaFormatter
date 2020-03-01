@@ -22,6 +22,9 @@ namespace eXclusiveMediaFormatter
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
+        private int radioButtonSelection;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -54,12 +57,79 @@ namespace eXclusiveMediaFormatter
 
         private void BrowseButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (sender == BrowseButtonSource)
+            {
+                createMusicFileOpenPicker();
+            }
+            else
+            {
+                createFolderFileOpenPicker();
+            }
         }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
+            if (Mp3Radio.IsChecked.Value)
+            {
+                radioButtonSelection = 0;
+            }
+            else if(WavRad.IsChecked.Value)
+            {
+                radioButtonSelection = 1;
+            }
+            else if(FlacRad.IsChecked.Value)
+            {
+                radioButtonSelection = 2;
+            }
+            else if(OggRad.IsChecked.Value)
+            {
+                radioButtonSelection = 3;
+            }
+            else
+            {
+                radioButtonSelection = 4;
+            }
+        }
 
+        private async void createMusicFileOpenPicker()
+        {
+            var musicPicker = new Windows.Storage.Pickers.FileOpenPicker();
+            musicPicker.ViewMode = Windows.Storage.Pickers.PickerViewMode.Thumbnail;
+            musicPicker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.MusicLibrary;
+            musicPicker.FileTypeFilter.Add(".mp3");
+            musicPicker.FileTypeFilter.Add(".flac");
+            musicPicker.FileTypeFilter.Add(".ogg");
+            musicPicker.FileTypeFilter.Add(".wave");
+            musicPicker.FileTypeFilter.Add("*");
+
+            Windows.Storage.StorageFile file = await musicPicker.PickSingleFileAsync();
+            if (file != null)
+            {
+                SourceTextBox.Text = file.Path;
+            }
+            else
+            {
+                SourceTextBox.Text = "Operation cancelled.";
+            }
+        }
+
+        private async void createFolderFileOpenPicker()
+        {
+            var folderPicker = new Windows.Storage.Pickers.FolderPicker();
+            folderPicker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.Desktop;
+            folderPicker.FileTypeFilter.Add("*");
+
+            Windows.Storage.StorageFolder folder = await folderPicker.PickSingleFolderAsync();
+            if (folder != null)
+            {
+                Windows.Storage.AccessCache.StorageApplicationPermissions.
+                FutureAccessList.AddOrReplace("PickedFolderToken", folder);
+                DestinationTextBox.Text = folder.Path;
+            }
+            else
+            {
+                DestinationTextBox.Text = "Operation cancelled.";
+            }
         }
     }
 }

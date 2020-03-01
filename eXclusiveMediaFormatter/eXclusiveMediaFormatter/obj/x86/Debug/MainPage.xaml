@@ -13,7 +13,7 @@
         <Rectangle HorizontalAlignment="Left" Height="802" Margin="38,144,0,0" Stroke="#FF747373" VerticalAlignment="Top" Width="348" StrokeThickness="10"/>
         <Button x:ConnectionId='3' x:Name="CancelButton" Content="Cancel" Margin="1260,930,0,0" VerticalAlignment="Top"                           />
         <ProgressBar x:ConnectionId='4' x:Name="ConvProg" HorizontalAlignment="Left" Height="24" Margin="607,876,0,0" VerticalAlignment="Top" Width="722"                                />
-        <RadioButton x:ConnectionId='5' x:Name="Mp3Radio" Content="mp3" Margin="92,224,0,0" VerticalAlignment="Top" Width="173" FontSize="18"                              />
+        <RadioButton x:ConnectionId='5' x:Name="Mp3Radio" Content="mp3" Margin="92,224,0,0" VerticalAlignment="Top" Width="173" FontSize="18"                               IsChecked="True"/>
         <RadioButton x:ConnectionId='6' x:Name="WavRad" Content="wave" Margin="92,293,0,0" VerticalAlignment="Top" FontSize="18"                              />
         <RadioButton x:ConnectionId='7' x:Name="FlacRad" Content="flac" Margin="94,360,0,0" VerticalAlignment="Top" FontSize="18"                              />
         <RadioButton x:ConnectionId='8' x:Name="OggRad" Content="ogg" Margin="92,429,0,0" VerticalAlignment="Top" FontSize="18"                              />
