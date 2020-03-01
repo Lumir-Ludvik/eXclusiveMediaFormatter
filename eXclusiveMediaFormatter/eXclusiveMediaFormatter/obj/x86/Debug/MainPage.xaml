@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="eXclusiveMediaFormatter.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:eXclusiveMediaFormatter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button x:ConnectionId='2' x:Name="ConvertButton" Content="Convert" Margin="1350,930,0,0" VerticalAlignment="Top"                            />
+        <Rectangle HorizontalAlignment="Left" Height="802" Margin="38,144,0,0" Stroke="#FF747373" VerticalAlignment="Top" Width="348" StrokeThickness="10"/>
+        <Button x:ConnectionId='3' x:Name="CancelButton" Content="Cancel" Margin="1260,930,0,0" VerticalAlignment="Top"                           />
+        <ProgressBar x:ConnectionId='4' x:Name="ConvProg" HorizontalAlignment="Left" Height="24" Margin="607,876,0,0" VerticalAlignment="Top" Width="722"                                />
+        <RadioButton x:ConnectionId='5' x:Name="Mp3Radio" Content="mp3" Margin="92,224,0,0" VerticalAlignment="Top" Width="173" FontSize="18"                              />
+        <RadioButton x:ConnectionId='6' x:Name="WavRad" Content="wave" Margin="92,293,0,0" VerticalAlignment="Top" FontSize="18"                              />
+        <RadioButton x:ConnectionId='7' x:Name="FlacRad" Content="flac" Margin="94,360,0,0" VerticalAlignment="Top" FontSize="18"                              />
+        <RadioButton x:ConnectionId='8' x:Name="OggRad" Content="ogg" Margin="92,429,0,0" VerticalAlignment="Top" FontSize="18"                              />
+        <TextBlock HorizontalAlignment="Left" Margin="178,161,0,0" Text="Format" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="84" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="607,33,0,0" TextAlignment="Center" Text="eXclusive media formatter" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="429" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="434,228,0,0" Text="Source path:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="434,364,0,0" Text="Destination path:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:ConnectionId='9' x:Name="SourceTextBox" HorizontalAlignment="Left" Margin="607,228,0,0" Text="Source" TextWrapping="Wrap" VerticalAlignment="Top" Width="722"                                        />
+        <TextBox x:ConnectionId='10' x:Name="DestinationTextBox" HorizontalAlignment="Left" Margin="607,364,0,0" Text="Destination" TextWrapping="Wrap" VerticalAlignment="Top" Width="722"                                             />
+        <TextBlock HorizontalAlignment="Left" Margin="434,876,0,0" Text="Progress:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:ConnectionId='11' x:Name="BrowseButtonSource" Content="Browse" Margin="1334,228,0,0" VerticalAlignment="Top"                           />
+        <Button x:ConnectionId='12' x:Name="BrowseButtonDestination" Content="Browse" Margin="1334,364,0,0" VerticalAlignment="Top"                            RenderTransformOrigin="0.508,0.469"/>
+    </Grid>
+</Page>
+
